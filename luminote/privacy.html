@@ -14,47 +14,60 @@
 <body>
 <nav><a href="index.html">Luminote</a><a href="#ja">日本語</a><a href="#en">English</a></nav>
 <h1>プライバシーポリシー / Privacy Policy</h1>
-<p><small>最終更新 / Last updated: YYYY-MM-DD（バージョン 0.2.0 の公開日）</small></p>
+<p><small>最終更新 / Last updated: YYYY-MM-DD（バージョン 0.3.0 の公開日）</small></p>
 
 <section lang="ja" id="ja">
 <h2>プライバシーポリシー</h2>
 <p>rikichin games（以下「当方」）は、Android アプリ「Luminote」（以下「本アプリ」）における利用者の情報の取り扱いについて、以下のとおり定めます。</p>
 
 <h3>1. 収集する情報</h3>
-<p>本アプリはアカウント登録を必要とせず、当方が利用者の個人情報を収集することはありません。本アプリに入力した記録の内容を、当方や第三者のサーバーに送信することはありません。インターネットへの接続は、広告の表示（第3条）とアップデートの確認（第4条）にのみ使用します。</p>
+<p>本アプリはアカウント登録を必要とせず、当方が利用者の個人情報を収集することはありません。本アプリに入力した記録の内容を、当方や第三者のサーバーに送信することはありません。インターネットへの接続は、広告の表示（第3条）とアップデートの確認（第7条）にのみ使用します。</p>
 
 <h3>2. 端末内に保存される情報</h3>
 <p>本アプリに入力した次の情報は、お使いの端末内にのみ保存されます。</p>
 <ul>
-  <li>記録項目（肌の調子・ストレス・睡眠の質など）と、日ごとの自己採点</li>
-  <li>出来事のタグ（寝不足・飲酒・運動など）とメモ</li>
-  <li>テーマ・言語・生理周期機能の ON/OFF などの設定</li>
+  <li>記録項目（毛穴・くすみ・ストレス・睡眠の質など）と、日ごとの自己採点</li>
+  <li>出来事のタグ（寝不足・飲酒・サプリなど）とメモ</li>
+  <li>生理周期の記録（生理期間・経血量・症状・おりもの・基礎体温・体重）と、そこから計算した予測（推定）</li>
+  <li>肌の写真（本アプリの専用領域に保存され、他のアプリからは見えません）</li>
+  <li>ヘルスコネクトから読み込んだ値（第4条）</li>
+  <li>リマインダーの時刻、アプリロックの設定、テーマ・言語などの設定</li>
 </ul>
-<p>これらには健康や体調に関する情報が含まれる場合があります。データベースは SQLCipher で暗号化され、暗号鍵は Android Keystore で保護された領域に保存されます。Android の自動バックアップ（Google ドライブへのバックアップ）は無効にしているため、データが端末の外にコピーされることはありません。</p>
+<p>これらには健康や体調に関する情報が含まれる場合があります。データベースは SQLCipher で暗号化され、暗号鍵は Android Keystore で保護された領域に保存されます。Android の自動バックアップ（Google ドライブへのバックアップ）は無効にしているため、利用者が自分でバックアップを書き出さない限り、データが端末の外にコピーされることはありません。</p>
+<p>アプリロックの PIN は、元に戻せない形（ハッシュ）にしたうえで Android Keystore で保護された領域に保存します。生体認証は端末の機能を使い、本アプリが指紋や顔の情報を受け取ることはありません。</p>
 
 <h3>3. 広告</h3>
 <p>本アプリでは Google AdMob によるバナー広告を、カレンダー画面と分析画面に表示します（記録の入力画面には表示しません）。AdMob は広告の配信・効果測定のため、端末の識別子（広告 ID 等）や利用データを収集・利用する場合があります。必要な地域では Google の同意フォームで同意を確認し、選択内容は「設定 &gt; 広告のプライバシー設定」からいつでも変更できます。</p>
 <p>本アプリに入力した記録（体調や肌の状態、メモ、生理周期に関する情報など）が広告 SDK に渡されることはなく、広告のターゲティングに使われることもありません。詳しくは <a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a> をご覧ください。</p>
 
-<h3>4. アップデートの確認</h3>
+<h3>4. ヘルスコネクト</h3>
+<p>利用者が設定で選んだ場合に限り、Android のヘルスコネクトから歩数・睡眠時間・安静時心拍数・体重・水分摂取量を読み取ります。読み取るのは利用者が許可した種類だけで、ヘルスコネクトへの書き込みは行いません。読み取った値は自己採点との比較・グラフ表示のためだけに使い、端末内に暗号化して保存します。広告、第三者への提供、端末外への送信には一切使用しません。本アプリによるヘルスコネクトのデータの使用は、<a href="https://support.google.com/googleplay/android-developer/answer/12991134">Health Connect の権限に関するポリシー</a>（制限付き使用の要件を含む）に従います。許可はヘルスコネクトの設定からいつでも取り消せます。</p>
+
+<h3>5. 通知・カメラ</h3>
+<p>リマインダー通知は端末内で予約・表示され、外部のサーバーを使いません。通知の文面は記録の内容が分からないものにしており、ロック画面では内容を伏せて表示します。カメラは肌の写真を撮影するときにだけ使用し、撮影した写真は端末内にのみ保存します。</p>
+
+<h3>6. バックアップと CSV</h3>
+<p>利用者が書き出したバックアップファイルは、利用者が設定したパスワードで暗号化されます（AES-256）。CSV ファイルは暗号化されません。書き出したファイルの保存先や共有先は利用者ご自身で管理してください。当方がこれらのファイルを受け取ることはありません。</p>
+
+<h3>7. アップデートの確認</h3>
 <p>起動時に Google Play の仕組みを使って新しいバージョンがあるかを確認し、ある場合はストアのページへご案内します。この確認で本アプリの記録が送信されることはありません。</p>
 
-<h3>5. 第三者への提供</h3>
+<h3>8. 第三者への提供</h3>
 <p>当方は利用者の情報を第三者に提供・販売しません。第3条の広告配信を除き、外部サービスに情報を送ることはありません。</p>
 
-<h3>6. データの削除</h3>
-<p>「設定 &gt; すべてのデータを削除」から、本アプリに保存されたすべてのデータを削除できます。本アプリをアンインストールした場合も、端末内のデータはすべて削除されます。データは当方のサーバーに存在しないため、当方が削除や復元を代行することはできません。</p>
+<h3>9. データの削除</h3>
+<p>「設定 &gt; すべてのデータを削除」から、本アプリに保存されたすべてのデータ（写真を含む）を削除できます。本アプリをアンインストールした場合も、端末内のデータはすべて削除されます。データは当方のサーバーに存在しないため、当方が削除や復元を代行することはできません。</p>
 
-<h3>7. 医療に関する注意</h3>
-<p>本アプリは日々の状態を記録し振り返るためのものであり、医療上の診断・治療・助言を行うものではありません。</p>
+<h3>10. 医療に関する注意</h3>
+<p>本アプリは日々の状態を記録し振り返るためのものであり、医療上の診断・治療・助言を行うものではありません。生理周期の予測は記録からの推定であり、避妊や妊娠の判断には使用しないでください。</p>
 
-<h3>8. 子どものプライバシー</h3>
+<h3>11. 子どものプライバシー</h3>
 <p>本アプリは 13 歳未満の子どもを対象としていません。</p>
 
-<h3>9. 本ポリシーの改定</h3>
-<p>機能の追加（例: ヘルスコネクトとの連携、写真の保存、リマインダー通知など）により情報の取り扱いが変わる場合は、その機能を提供する前に本ポリシーを改定し、このページでお知らせします。最新版の日付は上記のとおりです。</p>
+<h3>12. 本ポリシーの改定</h3>
+<p>機能の追加などにより情報の取り扱いが変わる場合は、その機能を提供する前に本ポリシーを改定し、このページでお知らせします。最新版の日付は上記のとおりです。</p>
 
-<h3>10. お問い合わせ</h3>
+<h3>13. お問い合わせ</h3>
 <p>rikichin games: <a href="mailto:rikichin.games@gmail.com">rikichin.games@gmail.com</a></p>
 </section>
 
@@ -63,40 +76,53 @@
 <p>This policy explains how rikichin games ("we") handles your information in the Android app "Luminote" (the "App").</p>
 
 <h3>1. Information we collect</h3>
-<p>The App does not require an account, and we do not collect any personal information. What you record in the App is never sent to our servers or to any third party. The App connects to the internet only to show ads (section 3) and to check for updates (section 4).</p>
+<p>The App does not require an account, and we do not collect any personal information. What you record in the App is never sent to our servers or to any third party. The App connects to the internet only to show ads (section 3) and to check for updates (section 7).</p>
 
 <h3>2. Information stored on your device</h3>
 <p>The following information you enter is stored only on your device:</p>
 <ul>
-  <li>The items you track (such as skin condition, stress and sleep quality) and your daily self-ratings</li>
-  <li>Event tags (such as lack of sleep, alcohol or exercise) and notes</li>
-  <li>Settings such as theme, language and whether the menstrual cycle feature is turned on</li>
+  <li>The items you track (such as pores, dullness, stress and sleep quality) and your daily self-ratings</li>
+  <li>Event tags (such as lack of sleep, alcohol or supplements) and notes</li>
+  <li>Menstrual cycle records (period dates, flow, symptoms, discharge, basal temperature, weight) and the estimates calculated from them</li>
+  <li>Skin photos (stored in the App's private storage, not visible to other apps)</li>
+  <li>Values read from Health Connect (section 4)</li>
+  <li>Reminder times, app lock settings, and settings such as theme and language</li>
 </ul>
-<p>This may include information about your health and wellbeing. The database is encrypted with SQLCipher, and its key is stored in storage protected by the Android Keystore. Android Auto Backup (backup to Google Drive) is turned off, so your data is not copied off the device.</p>
+<p>This may include information about your health and wellbeing. The database is encrypted with SQLCipher, and its key is stored in storage protected by the Android Keystore. Android Auto Backup (backup to Google Drive) is turned off, so your data is not copied off the device unless you export a backup yourself.</p>
+<p>Your app lock PIN is stored only as a one-way hash in storage protected by the Android Keystore. Biometric unlock uses your device's own feature; the App never receives fingerprint or face data.</p>
 
 <h3>3. Advertising</h3>
 <p>The App shows banner ads provided by Google AdMob on the Calendar and Insights screens (never on the screen where you enter records). AdMob may collect and use device identifiers (such as the advertising ID) and usage data to deliver and measure ads. Where required, we ask for your consent through Google's consent form, and you can change your choices any time from Settings &gt; Ad privacy settings.</p>
 <p>What you record in the App (such as how you feel, skin condition, notes or menstrual cycle information) is never passed to the ad SDK and is never used to target ads. For details, see <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
 
-<h3>4. Update checks</h3>
+<h3>4. Health Connect</h3>
+<p>Only if you turn it on in Settings, the App reads steps, sleep duration, resting heart rate, weight and hydration from Android Health Connect. It reads only the data types you allow and never writes to Health Connect. These values are used only to compare with your ratings and show charts, and are encrypted and stored only on your device. They are never used for advertising, shared with third parties, or sent off the device. The App's use of information received from Health Connect adheres to the <a href="https://support.google.com/googleplay/android-developer/answer/12991134">Health Connect Permissions policy</a>, including the Limited Use requirements. You can revoke access at any time in Health Connect settings.</p>
+
+<h3>5. Notifications and camera</h3>
+<p>Reminder notifications are scheduled and shown on your device without any server. Their text never reveals what you track, and their content is hidden on the lock screen. The camera is used only when you take a skin photo, and photos are stored only on your device.</p>
+
+<h3>6. Backups and CSV</h3>
+<p>Backup files you export are encrypted with a password you choose (AES-256). CSV files are not encrypted. You are responsible for where you save or share exported files; we never receive them.</p>
+
+<h3>7. Update checks</h3>
 <p>When the App starts, it uses Google Play to check whether a newer version is available and, if so, offers to open the store page. Your records are not sent as part of this check.</p>
 
-<h3>5. Sharing with third parties</h3>
+<h3>8. Sharing with third parties</h3>
 <p>We do not share or sell your information. Apart from ad delivery described in section 3, the App does not send information to outside services.</p>
 
-<h3>6. Deleting your data</h3>
-<p>You can delete all data stored by the App from Settings &gt; Delete all data. Uninstalling the App also deletes all of its data from your device. Because your data is never on our servers, we cannot delete or recover it for you.</p>
+<h3>9. Deleting your data</h3>
+<p>You can delete all data stored by the App, including photos, from Settings &gt; Delete all data. Uninstalling the App also deletes all of its data from your device. Because your data is never on our servers, we cannot delete or recover it for you.</p>
 
-<h3>7. Medical disclaimer</h3>
-<p>The App is for recording and reviewing how you feel day to day. It does not provide medical diagnosis, treatment or advice.</p>
+<h3>10. Medical disclaimer</h3>
+<p>The App is for recording and reviewing how you feel day to day. It does not provide medical diagnosis, treatment or advice. Cycle predictions are estimates from your records; do not use them for contraception or fertility decisions.</p>
 
-<h3>8. Children</h3>
+<h3>11. Children</h3>
 <p>The App is not directed to children under 13.</p>
 
-<h3>9. Changes to this policy</h3>
-<p>If new features (for example Health Connect integration, saving photos or reminder notifications) change how information is handled, we will update this policy on this page before those features are released. The date above shows the latest version.</p>
+<h3>12. Changes to this policy</h3>
+<p>If new features change how information is handled, we will update this policy on this page before those features are released. The date above shows the latest version.</p>
 
-<h3>10. Contact</h3>
+<h3>13. Contact</h3>
 <p>rikichin games: <a href="mailto:rikichin.games@gmail.com">rikichin.games@gmail.com</a></p>
 </section>
 </body>
